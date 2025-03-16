@@ -1,6 +1,6 @@
 pipeline {
    environment {
-     git_url = "https://github.com/devopsguy27/java-project.git"
+     git_url = "https://github.com/sagarkalagudi/myproject.git"
      git_branch = "main"
    }
 
@@ -22,7 +22,7 @@ pipeline {
      
      stage('Docker Image Build') {     
         steps {
-              sh 'sudo docker build -t myjava-image . '
+              sh 'docker build -t myjava-image . '
                }
              }
         stage('Docker image push') {
